@@ -14,11 +14,11 @@ public class AnubisLogic {
 			method = args[0];
 		}
 
-		Scanner scanner = getScannerByFile("Data.csv");
-		if (scanner == null) {
-			return;
-		}
-		//		Scanner scanner = getScannerByStdin();
+//		Scanner scanner = getScannerByFile("Data.csv");
+//		if (scanner == null) {
+//			return;
+//		}
+		Scanner scanner = getScannerByStdin();
 		scanner.nextLine(); // skip header
 		AnubisObject ano = AnubisObject.anubisize(scanner);
 		scanner.close();
